@@ -1,0 +1,267 @@
+page-home {
+    ion-content{
+        background-image: url("../../assets/images/background.png");
+        height: 100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #BaseLabel{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin-top: 60px;
+        color: white;
+        font-weight: 900;
+        font-kerning: normal;
+    }
+    #ActivationDiv{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #InActiveLabel{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 60px;
+        color: white;
+        float: left;
+        margin-left: 10px;
+        margin-top: -4px;
+    }
+    #ActiveLabel{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 60px;
+        color: white;
+        float: right;
+        margin-right: 50px;
+        margin-top: -4px;
+    }
+    .switch {
+        position: absolute;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin-left: 20px;
+        //margin-top: 50px;
+    }
+    .switch input {
+        display: none;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked + .slider {
+        background-color: rgb(0,182,185);
+    }
+
+    input:focus + .slider {
+        box-shadow: 0 0 1px rgb(0,182,185);
+    }
+
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+    @media only screen and (max-width: 414px) and ( min-width: 400px) {
+
+        #BaseLabel {
+            font-size: 60px;
+            margin-top: 60px;
+        }
+        #InActiveLabel{
+            font-size: 40px;
+            margin-left: 20px;
+        }
+        #ActiveLabel{
+            font-size: 40px;
+            margin-right: 50px;
+        }
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 390px) and ( min-width: 370px) {
+        #InActiveLabel{
+            font-size: 35px;
+            margin-left: 20px;
+        }
+        #ActiveLabel{
+            font-size: 35px;
+            margin-right: 50px;
+        }
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-left: 30px;
+        }
+    }
+    @media only screen and (max-width: 369px) and ( min-width: 350px) {
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            margin-left: 40px;
+        }
+    }
+    @media only screen and (max-width: 650px) and ( min-width: 550px) {
+        #BaseLabel { 
+            font-size: 80px;
+        }
+        #InActiveLabel{
+            font-size: 50px;
+            margin-left: 50px;
+            margin-top: -6px;
+        }
+        #ActiveLabel{
+            font-size: 50px;
+            margin-right: 110px;
+            margin-top: -6px;
+        }
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin-left: 45px;
+            //margin-top: 50px;
+        }
+        .switch input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 40px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            transform: translateX(50px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    }
+    @media only screen and (max-width: 768px) and ( min-width: 668px) {
+
+        #BaseLabel { 
+            font-size: 80px;
+        }
+        #InActiveLabel{
+            font-size: 60px;
+            margin-left: 60px;
+            margin-top: -6px;
+        }
+        #ActiveLabel{
+            font-size: 60px;
+            margin-right: 130px;
+            margin-top: -6px;
+        }
+        .switch {
+            position: absolute;
+            display: inline-block;
+            width: 120px;
+            height: 60px;
+            margin-left: 75px;
+            //margin-top: 50px;
+        }
+        .switch input {
+            display: none;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 50px;
+            width: 50px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .slider:before {
+            -webkit-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+            transform: translateX(60px);
+        }
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    }
+}

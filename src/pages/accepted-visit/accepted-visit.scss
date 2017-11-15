@@ -1,0 +1,157 @@
+page-accepted-visit {
+    
+    #BaseLabel{
+        display: block;
+        font-size: 30px;
+        color: rgb(0,182,185);
+        font-weight: 100;
+        font-kerning: normal;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    #PatiantDiv{
+        display: block;
+        width: 100%;
+        height: 20%;
+    }
+    #ImageDiv{
+        display: inline-block;
+        width: 25%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #ImageDiv img{
+        width: 100%;
+    }
+    #DetailsDiv{
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 100px;
+    }
+    #DetailsDiv label{
+        display: inline-block;
+        font-size: 30px;
+        color: rgb(0,182,185);
+        font-weight: 400;
+    }
+    #ProblemLabel{
+        display: inline-block;
+        font-size: 22px;
+        color: rgb(0,182,185);
+        margin-left: 10px;
+    }
+    #ContactDiv{
+        display: block;
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
+    }
+    #ContactDiv button{
+        background-color: transparent;
+    }
+    #ButtonsDiv{
+        display: block;
+        width: 100%;
+        height: 10%;
+        margin-bottom: 170px;
+        margin-left: 10px;
+        position: fixed;
+        bottom: 0;
+    }
+    #ButtonsDiv button{
+        width: 94%;
+        height: 50px;
+        background-color: rgb(196,86,86);
+        border-radius: 10px;
+        color: white;
+        margin-top: 5px;
+        font-size: 28px;
+        font-weight: 100;
+    }
+    @media only screen and (max-width: 330px) and ( min-width: 310px) {
+        #ButtonsDiv{
+            margin-bottom: 160px;
+        }
+        #ProblemLabel{
+            font-size: 21px;
+        }
+        #ButtonsDiv button{
+            height: 45px;
+            font-size: 30px;
+        }
+    }
+    @media only screen and (max-width: 369px) and ( min-width: 350px) {
+    }
+    @media only screen and (max-width: 414px) and ( min-width: 370px) {
+        #PatiantDiv{
+            height: 25%;
+        }
+        #ProblemLabel{
+            font-size: 25px;
+        }
+        #BaseLabel{
+            font-size: 40px;
+        }
+    }
+    @media only screen and (max-width: 650px) and ( min-width: 550px) {
+        #DetailsDiv{
+            margin-bottom: 150px;
+        }
+        #DetailsDiv label{
+            font-size: 40px;
+        }
+        #ProblemLabel{
+            font-size: 30px;
+        }
+        #ContactDiv button{
+            width: 50px;
+            height: 49px;
+        }
+        #ContactDiv img{
+            width: 100%;
+            height: 100%;
+        }
+        #BaseLabel{
+            font-size: 60px;
+        }
+        #ButtonsDiv{
+            margin-bottom: 220px;
+        }
+        #ButtonsDiv button{
+            width: 96%;
+            height: 70px;
+            font-size: 50px;
+        }
+    }
+    @media only screen and (max-width: 768px) and ( min-width: 700px) {
+        #DetailsDiv{
+            margin-bottom: 200px;
+        }
+        #DetailsDiv label{
+            font-size: 50px;
+        }
+        #ProblemLabel{
+            margin-top: 30px;
+            font-size: 40px;
+        }
+        #ContactDiv button{
+            width: 60px;
+            height: 59px;
+        }
+        #ContactDiv img{
+            width: 100%;
+            height: 100%;
+        }
+        #BaseLabel{
+            font-size: 80px;
+        }
+        #ButtonsDiv{
+            margin-bottom: 220px;
+        }
+        #ButtonsDiv button{
+            width: 97%;
+            height: 70px;
+            font-size: 50px;
+        }
+    }
+}

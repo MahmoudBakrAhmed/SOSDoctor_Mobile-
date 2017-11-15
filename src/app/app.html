@@ -1,0 +1,27 @@
+<ion-menu [content]="SOSMenu">
+    <ion-content class="MenuContent" title="Menu">
+        
+    </ion-content>
+</ion-menu>
+<ion-nav #SOSMenu [root]="rootPage">
+    
+</ion-nav>
+<ion-navbar>
+    <ion-title>
+        <img src="../assets/images/logo.png">
+    </ion-title>
+    <button ion-button menuToggle><img id="MenuImage" src="../assets/images/burger-buttons.png"></button>
+</ion-navbar>
+
+<ion-footer *ngIf="!footerIsHidden">
+    <ion-navbar id="FooterNav">
+        <div id="ActivationDiv">
+            <label id="InActiveLabel">Inactive</label>
+            <label class="switch" >
+                <input id="ActiveToggle" type="checkbox" checked="checked">
+                <span class="slider round"></span>
+            </label>
+            <label id="ActiveLabel">Active</label>
+        </div>
+    </ion-navbar>
+</ion-footer>

@@ -1,0 +1,114 @@
+page-no-requests {
+    
+    ion-content{
+        background-image: url("../../assets/images/background2.png");
+        height: 100%;
+        width: 110%;
+        position: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 57px;
+        //height: 25px;
+        position: fixed;
+        top: 0;
+    }
+    #BaseLabel{
+        display: block;
+        font-size: 34px;
+        color: white;
+        font-weight: 900;
+        font-kerning: normal;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+        //height: 23px;
+        position: fixed;
+        bottom: 0;
+    }
+    @media only screen and (max-width: 369px) and ( min-width: 350px) {
+        #HeaderImage{
+            display: block;
+            width: 100%;
+            margin-top: 57px;
+            position: fixed;
+            top: 0;
+        }
+        #FooterImage{
+            display: block;
+            width: 100%;
+            margin-bottom: 55px;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 414px) and ( min-width: 370px) {
+
+        #BaseLabel {
+            font-size: 40px;
+            margin-top: 60px;
+        }
+        #HeaderImage{
+            display: block;
+            width: 100%;
+            margin-top: 57px;
+            position: fixed;
+            top: 0;
+        }
+        #FooterImage{
+            display: block;
+            width: 100%;
+            margin-bottom: 55px;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 650px) and ( min-width: 550px) {
+        #HeaderImage{
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            position: fixed;
+            top: 0;
+        }
+        #BaseLabel { 
+            font-size: 60px;
+            margin-top: 60px;
+        }
+        #FooterImage{
+            display: block;
+            width: 100%;
+            margin-bottom: 55px;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+    @media only screen and (max-width: 768px) and ( min-width: 700px) {
+        #HeaderImage{
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            position: fixed;
+            top: 0;
+        }
+        #BaseLabel { 
+            font-size: 80px;
+        }
+        #FooterImage{
+            display: block;
+            width: 100%;
+            margin-bottom: 65px;
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}

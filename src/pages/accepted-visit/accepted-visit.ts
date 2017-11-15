@@ -1,0 +1,38 @@
+import { Component } from '@angular/core';
+import { NavController, NavParams } from 'ionic-angular';
+import { Events } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { StartedVisitPage } from '../started-visit/started-visit';
+import { CancelRequestPage } from '../cancel-request/cancel-request';
+
+@Component({
+  selector: 'page-accepted-visit',
+  templateUrl: 'accepted-visit.html',
+})
+export class AcceptedVisitPage {
+
+    constructor(public navCtrl: NavController, public navParams: NavParams, private events: Events) {
+    }
+
+    ionViewDidEnter() {
+        let checked = <HTMLInputElement>document.getElementsByTagName("input")[1];
+        if(checked){
+            checked.addEventListener("click", () => {
+                this.Navigation();
+            }, false);
+        }
+    }
+    Navigation(){
+        if(!this.navCtrl.isTransitioning()){
+           this.events.publish('hideHeader', { isHidden: true});
+        }
+        this.navCtrl.popToRoot();
+    }
+    SubmitButton(){
+        this.navCtrl.push(StartedVisitPage);
+    }
+    CancelButton(){
+        this.navCtrl.push(CancelRequestPage);
+    }
+
+}
