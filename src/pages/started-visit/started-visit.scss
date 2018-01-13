@@ -16,7 +16,7 @@ page-started-visit {
         font-weight: 100;
         position: fixed;
         top: 30%;
-        left: 25%;
+        margin-left: 25%;
     }
     #ButtonsDiv{
         display: block;
@@ -39,7 +39,7 @@ page-started-visit {
     }
     @media only screen and (max-width: 330px) and ( min-width: 310px) {
         #TimingLabel{
-            left: 24%;
+            margin-left: 24%;
         }
     }
     @media only screen and (max-width: 369px) and ( min-width: 350px) {
@@ -49,17 +49,17 @@ page-started-visit {
             font-size: 40px;
         }
         #TimingLabel{
-            left: 21%;
+            margin-left: 21%;
             font-size: 40px;
         }
     }
     @media only screen and (max-width: 650px) and ( min-width: 550px) {
         #BaseLabel{
-            font-size: 60px;
+            font-size: 50px;
         }
         #TimingLabel{
-            left: 21%;
-            font-size: 60px;
+            margin-left: 21%;
+            font-size: 50px;
         }
         #ButtonsDiv button{
             width: 96%;
@@ -72,7 +72,7 @@ page-started-visit {
             font-size: 80px;
         }
         #TimingLabel{
-            left: 23%;
+            margin-left: 23%;
             font-size: 70px;
         }
         #ButtonsDiv button{

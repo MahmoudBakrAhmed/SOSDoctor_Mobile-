@@ -78,6 +78,7 @@ page-rate-last-visit {
         font-size: 28px;
         font-weight: 100;
     }
+    
     @media only screen and (max-width: 330px) and ( min-width: 310px) {
         #ImageDiv{
             height: 90%;
@@ -138,25 +139,26 @@ page-rate-last-visit {
             margin-bottom: 170px;
         }
         #DetailsDiv label{
-            font-size: 40px;
+            font-size: 30px;
         }
-         #StarsDiv{
+        #StarsDiv{
             text-align: center;
             margin-left: -30px;
         }
         #BaseLabel{
-            font-size: 50px;
+            font-size: 40px;
         }
         textarea{
             width: 87.8%;
             height: 25%;
             margin-top: 40px;
-            font-size: 40px;
+            font-size: 30px;
         }
         #ButtonsDiv{
             margin-bottom: 220px;
         }
         #ButtonsDiv button{
+            margin-top: 50px;
             height: 90px;
             font-size: 50px;
         }

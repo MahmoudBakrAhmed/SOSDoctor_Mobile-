@@ -13,27 +13,28 @@
 
 
 <ion-content>
-    <img id="HeaderImage" src="../../assets/images/footer-bar.png">
+    <img id="HeaderImage" src="assets/images/footer-bar.png">
     <label id="BaseLabel">You have accepted <br>the SOS</label>
     <div id="PatiantDiv">
         <div id="ImageDiv">
-            <img src="../../assets/images/doctor-pic.png">
+            <img data-src="{{PatientImage}}">
         </div>
         <div id="DetailsDiv">
-            <label><b>Emad Abdallah</b></label>
+            <label><b>{{PatientName}}</b></label>
             <br>
             <label><b>ETA</b> : 20 min</label>
         </div>
     </div>
     <label id="ProblemLabel"><b>Problem: </b>Can't breath correctlly<br> and chest hurts.</label>
+    <br>
     <div id="ContactDiv">
-        <button><img src="../../assets/images/mobile-icon.png"></button>
-        <button><img src="../../assets/images/message-icon.png"></button>
+        <a href="tel:01145033268" class="button button-positive"><img src="assets/images/mobile-icon.png"></a>
+        <a href="sms:+1-1800-555-5555" class="button button-positive"><img src="assets/images/message-icon.png"></a>
     </div>
     <div id="ButtonsDiv">
         <button id="StartButton" (click)="SubmitButton()">Start Visit</button>
-        <button id="MapButton">View Map</button>
+        <button id="MapButton" (click)="MapButton()">View Map</button>
         <button id="CancelButton" (click)="CancelButton()">Cancel</button>
     </div>
-    <img id="FooterImage" src="../../assets/images/footer-bar.png">
+    <img id="FooterImage" src="assets/images/footer-bar.png">
 </ion-content>

@@ -13,30 +13,30 @@
 
 
 <ion-content>
-    <img id="HeaderImage" src="../../assets/images/footer-bar.png">
+    <img id="HeaderImage" src="assets/images/footer-bar.png">
     <label id="BaseLabel"><b>Rate Your Last Visit</b></label>
     <div id="PatiantDiv">
         <div id="ImageDiv">
-            <img src="../../assets/images/doctor-pic.png">
+            <img src="assets/images/doctor-pic.png">
         </div>
         <div id="DetailsDiv">
-            <label><b>Emad Abdallah</b></label>
+            <label><b>{{PatientName}}</b></label>
             <br>
             <label>Giza</label>
             <br>
-            <label>Sunday 11/10-10 pm</label>
+            <label>{{StartTime}}</label>
         </div>
     </div>
     <div id="StarsDiv">
-        <button><ion-icon name="star-outline"></ion-icon></button>
-        <button><ion-icon name="star-outline"></ion-icon></button>
-        <button><ion-icon name="star-outline"></ion-icon></button>
-        <button><ion-icon name="star-outline"></ion-icon></button>
-        <button><ion-icon name="star-outline"></ion-icon></button>
+        <button id="firstButton" (click)="FirstStarButton()"><ion-icon id="firstStar" name="star-outline"></ion-icon></button>
+        <button id="secondButton" (click)="SecondStarButton()"><ion-icon id="secondStar" name="star-outline"></ion-icon></button>
+        <button id="thirdButton" (click)="ThirdStarButton()"><ion-icon id="thirdStar" name="star-outline"></ion-icon></button>
+        <button id="forthButton" (click)="ForthStarButton()"><ion-icon id="forthStar" name="star-outline"></ion-icon></button>
+        <button id="fifthButton" (click)="FifthStarButton()"><ion-icon id="fifthStar" name="star-outline"></ion-icon></button>
     </div>
-    <textarea placeholder="Add Comment"></textarea>
+    <textarea placeholder="Add Comment" id="DoctorComment"></textarea>
     <div id="ButtonsDiv">
         <button id="SubmitButton" (click)="SubmitButton()">Submit</button>
     </div>
-    <img id="FooterImage" src="../../assets/images/footer-bar.png">
+    <img id="FooterImage" src="assets/images/footer-bar.png">
 </ion-content>

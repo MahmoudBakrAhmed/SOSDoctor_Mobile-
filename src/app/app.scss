@@ -1,360 +1,422 @@
+@font-face {
+    font-family: 'Raleway' !important;
+    src: url("../assets/fonts/Raleway-Regular.ttf") format("truetype");
+}
+$font-family-md-base: "Ralway";
+label{
+    font-family: 'Raleway' !important;
+}
+button{
+    font-family: 'Raleway' !important;
+}
+ion-content{
+    width: 110%;
+}
 ion-title{  
     text-align: center;
+    margin-left: -20px;
+    //margin-top: 8px;
 }
+
 #MenuImage{
     display: inline-block;
     height: 100%;
+    margin-left: 20px;
 }
-#FooterNav{
-    
+#MenuHeaderDataDiv{
+    display: inline-block;
+    height: 12%;
+    margin-left: 2%;
+    margin-top: 5%;
 }
-ion-content{
-        width: 110%;
-    }
+#MenuHeaderDataDiv button{
+    background-color: transparent;
+    margin-left: -10%;
+}
+#UsernameMenuLabel{
+    display: inline-block;
+    color: rgb(0,182,185);
+    font-size: 22px;
+}
+#ProfileMenuLabel{
+    display: inline-block;
+    color: rgb(196,86,86);
+    background: transparent;
+    text-align: left;
+    font-size: 23px;
+    margin-top: -10%;
+    margin-left: 10%;
+}
+#MenuTitleSplitDiv{
+    height: 1.5px;
+    background: rgb(0,182,185);
+}
+#MenuButton{
+    margin-left: -20px;
+}
+#MenuList Button{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 2%;
+    color: black;
+    font-size: 24px;
+    background-color: transparent;
+}
+#SocialMediaDiv Button{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 0%;
+    color: black;
+    font-size: 24px;
+    background-color: transparent;
+}
 #HeaderImage{
+    display: block;
+    width: 100%;
+    margin-top: 57px;
+    //height: 25px;
+    position: fixed;
+    top: 0;
+}
+#FooterImage{
+    display: block;
+    width: 100%;
+    margin-bottom: 55px;
+    //height: 23px;
+    position: fixed;
+    bottom: 0;
+}
+#ActivationDiv{
+    text-align: center;
+    width: 100%;
+}
+#InActiveLabel{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    color: rgb(0,182,185);
+    float: left;
+    margin-left: 10px;
+    margin-top: -4px;
+}
+#ActiveLabel{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 60px;
+    color: rgb(0,182,185);
+    float: right;
+    margin-right: 10px;
+    margin-top: -4px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    display: none;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0,182,185);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+@media only screen and (max-width: 330px) and ( min-width: 310px) {
+    #HeaderImage{
         display: block;
         width: 100%;
         margin-top: 57px;
-        //height: 25px;
         position: fixed;
         top: 0;
     }
-#FooterImage{
+    #FooterImage{
         display: block;
         width: 100%;
         margin-bottom: 55px;
-        //height: 23px;
         position: fixed;
         bottom: 0;
     }
-#ActivationDiv{
-        width: 100%;
-    }
+}
+@media only screen and (max-width: 414px) and ( min-width: 400px) {
     #InActiveLabel{
-        display: block;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 60px;
-        color: rgb(0,182,185);
-        float: left;
-        margin-left: 10px;
-        margin-top: -4px;
+        font-size: 40px;
+        margin-left: 5px;
     }
     #ActiveLabel{
-        display: block;
-        text-align: center;
-        font-size: 30px;
-        margin-top: 60px;
-        color: rgb(0,182,185);
-        float: right;
+        font-size: 40px;
         margin-right: 10px;
-        margin-top: -4px;
+    }
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 57px;
+        position: fixed;
+        top: 0;
+    }
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+        position: fixed;
+        bottom: 0;
     }
     .switch {
-        position: absolute;
-        display: inline-block;
         width: 60px;
         height: 34px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 480px) and ( min-width: 420px) {
+    #InActiveLabel{
+        font-size: 40px;
         margin-left: 20px;
-        //margin-top: 50px;
     }
-    .switch input {
-        display: none;
+    #ActiveLabel{
+        font-size: 40px;
+        margin-right: 20px;
     }
-    .slider {
-        position: absolute;
-        cursor: pointer;
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 57px;
+        position: fixed;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #ccc;
-        -webkit-transition: .4s;
-        transition: .4s;
     }
-
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+        position: fixed;
+        bottom: 0;
+    }
+    .switch {
+        width: 60px;
+        height: 34px;
+    }
+}
+@media only screen and (max-width: 390px) and ( min-width: 370px) {
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 55px;
+        position: fixed;
+        top: 0;
+    }
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 53px;
+        position: fixed;
+        bottom: 0;
+    }
+    .switch {
+        width: 60px;
+        height: 34px;
+    }
+}
+@media only screen and (max-width: 369px) and ( min-width: 350px) {
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 57px;
+        position: fixed;
+        top: 0;
+    }
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+        position: fixed;
+        bottom: 0;
+    }
+    .switch {
+        width: 60px;
+        height: 34px;
+    }
+}
+@media only screen and (max-width: 650px) and ( min-width: 550px) {
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        position: fixed;
+        top: 0;
+    }
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 55px;
+        position: fixed;
+        bottom: 0;
+    }
+    #MenuHeaderDataDiv{
+        height: 8%;
+    }
+    #MenuCloseButton{
+        margin-left: -7%;
+    }
+    #MenuList button{
+        margin-top: 8%;
+    }
+    #InActiveLabel{
+        font-size: 40px;
+        margin-left: 50px;
+    }
+    #ActiveLabel{
+        font-size: 40px;
+        margin-right: 60px;
+    }
+    .switch {
+        width: 100px;
+        height: 50px;
+    }
     .slider:before {
         position: absolute;
         content: "";
-        height: 26px;
-        width: 26px;
+        height: 40px;
+        width: 40px;
         left: 4px;
         bottom: 4px;
         background-color: white;
         -webkit-transition: .4s;
         transition: .4s;
     }
-    input:checked + .slider {
-        background-color: rgb(0,182,185);
+    .slider:before {
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
     }
-
-    input:focus + .slider {
-        box-shadow: 0 0 1px rgb(0,182,185);
+}
+@media only screen and (max-width: 768px) and ( min-width: 700px) {
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 48px;
+        position: fixed;
+        top: 0;
     }
-
-    input:checked + .slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 65px;
+        position: fixed;
+        bottom: 0;
     }
-    .slider.round {
-        border-radius: 34px;
+    #MenuHeaderDataDiv{
+        height: 8%;
     }
-
-    .slider.round:before {
-        border-radius: 50%;
+    #MenuList button{
+        margin-top: 8%;
     }
-    @media only screen and (max-width: 330px) and ( min-width: 310px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
+    #InActiveLabel{
+        font-size: 60px;
+        margin-left: 60px;
+        margin-top: -6px;
     }
-    @media only screen and (max-width: 414px) and ( min-width: 400px) {
-        #InActiveLabel{
-            font-size: 40px;
-            margin-left: 20px;
-        }
-        #ActiveLabel{
-            font-size: 40px;
-            margin-right: 20px;
-        }
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-top: 3px;
-            margin-left: 25px;
-        }
+    #ActiveLabel{
+        font-size: 60px;
+        margin-right: 70px;
+        margin-top: -6px;
     }
-    @media only screen and (max-width: 390px) and ( min-width: 370px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-left: 50px;
-        }
+    .switch {
+        width: 120px;
+        height: 60px;
     }
-    @media only screen and (max-width: 369px) and ( min-width: 350px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-left: 40px;
-        }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 50px;
+        width: 50px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
     }
-    @media only screen and (max-width: 650px) and ( min-width: 550px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
-        #InActiveLabel{
-            font-size: 50px;
-            margin-left: 50px;
-            margin-top: -6px;
-        }
-        #ActiveLabel{
-            font-size: 50px;
-            margin-right: 60px;
-            margin-top: -6px;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 100px;
-            height: 50px;
-            margin-left: 40px;
-            //margin-top: 50px;
-        }
-        .switch input {
-            display: none;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 40px;
-            width: 40px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        input:checked + .slider {
-            background-color: rgb(0,182,185);
-        }
-
-        input:focus + .slider {
-            box-shadow: 0 0 1px rgb(0,182,185);
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(50px);
-            -ms-transform: translateX(50px);
-            transform: translateX(50px);
-        }
-        .slider.round {
-            border-radius: 34px;
-        }
-
-        .slider.round:before {
-            border-radius: 50%;
-        }
+    .slider:before {
+        -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        transform: translateX(60px);
     }
-    @media only screen and (max-width: 768px) and ( min-width: 700px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 65px;
-            position: fixed;
-            bottom: 0;
-        }
-        #InActiveLabel{
-            font-size: 60px;
-            margin-left: 60px;
-            margin-top: -6px;
-        }
-        #ActiveLabel{
-            font-size: 60px;
-            margin-right: 70px;
-            margin-top: -6px;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 120px;
-            height: 60px;
-            margin-left: 55px;
-            //margin-top: 50px;
-        }
-        .switch input {
-            display: none;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 50px;
-            width: 50px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        input:checked + .slider {
-            background-color: rgb(0,182,185);
-        }
-
-        input:focus + .slider {
-            box-shadow: 0 0 1px rgb(0,182,185);
-        }
-
-        input:checked + .slider:before {
-            -webkit-transform: translateX(60px);
-            -ms-transform: translateX(60px);
-            transform: translateX(60px);
-        }
-        .slider.round {
-            border-radius: 34px;
-        }
-
-        .slider.round:before {
-            border-radius: 50%;
-        }
+}
+@media only screen and ( min-width: 800px) {
+    #HeaderImage{
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        position: fixed;
+        top: 0;
     }
+    #FooterImage{
+        display: block;
+        width: 100%;
+        margin-bottom: 75px;
+        position: fixed;
+        bottom: 0;
+    }
+    #InActiveLabel{
+        font-size: 60px;
+        margin-left: 60px;
+        margin-top: -6px;
+    }
+    #ActiveLabel{
+        font-size: 60px;
+        margin-right: 70px;
+        margin-top: -6px;
+    }
+    #MenuList button{
+        margin-top: 8%;
+    }
+    .switch {
+        width: 120px;
+        height: 60px;
+    }
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 50px;
+        width: 50px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .slider:before {
+        -webkit-transform: translateX(60px);
+        -ms-transform: translateX(60px);
+        transform: translateX(60px);
+    }
+}
