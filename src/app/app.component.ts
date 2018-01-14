@@ -92,8 +92,8 @@ export class MyApp {
             .handleNotificationOpened(notificationOpenedCallback);
             window["plugins"].OneSignal.endInit();
             
-            this.storage.get('access_token').then((val) => {
-                if(val == null){
+            this.storage.get('access_token').then((value) => {
+                if(value == null){
                     events.subscribe('hideMenu', (data) => {
                         this.MenuIsHidden = data.isHidden;
                     });
