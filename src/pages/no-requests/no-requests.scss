@@ -1,21 +1,13 @@
 page-no-requests {
     
     ion-content{
-        background-image: url("../../assets/images/background2.png");
+        background-image: url("../assets/images/background2.png");
         height: 100%;
         width: 110%;
         position: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    #HeaderImage{
-        display: block;
-        width: 100%;
-        margin-top: 57px;
-        //height: 25px;
-        position: fixed;
-        top: 0;
     }
     #BaseLabel{
         display: block;
@@ -26,29 +18,60 @@ page-no-requests {
         margin-top: 20px;
         margin-left: 10px;
     }
-    
-    #FooterImage{
-        display: block;
-        width: 100%;
-        margin-bottom: 55px;
-        //height: 23px;
-        position: fixed;
-        bottom: 0;
+    .ActiveSwitch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
     }
+    .ActiveSwitch input {
+        display: none;
+    }
+    .Slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(0,182,185);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    .Slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    input:checked + .Slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+    .Slider.Round {
+        border-radius: 34px;
+    }
+    
+    .Slider.Round:before {
+        border-radius: 50%;
+    }
+    
     @media only screen and (max-width: 369px) and ( min-width: 350px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
+        .ActiveSwitch {
+            width: 60px;
+            height: 34px;
         }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
+    }
+    @media only screen and (max-width: 390px) and ( min-width: 370px) {
+        .ActiveSwitch {
+            width: 60px;
+            height: 34px;
         }
     }
     @media only screen and (max-width: 414px) and ( min-width: 370px) {
@@ -57,58 +80,61 @@ page-no-requests {
             font-size: 40px;
             margin-top: 60px;
         }
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
+        .ActiveSwitch {
+            width: 60px;
+            height: 34px;
+            margin-top: 5px;
         }
     }
     @media only screen and (max-width: 650px) and ( min-width: 550px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
         #BaseLabel { 
-            font-size: 60px;
+            font-size: 50px;
             margin-top: 60px;
         }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
+        .ActiveSwitch {
+            width: 100px;
+            height: 50px;
+        }
+        .Slider:before {
+            position: absolute;
+            content: "";
+            height: 40px;
+            width: 40px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .Slider:before {
+            -webkit-transform: translateX(50px);
+            -ms-transform: translateX(50px);
+            transform: translateX(50px);
         }
     }
     @media only screen and (max-width: 768px) and ( min-width: 700px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
         #BaseLabel { 
             font-size: 80px;
         }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 65px;
-            position: fixed;
-            bottom: 0;
+        .ActiveSwitch {
+            width: 120px;
+            height: 60px;
+        }
+        .Slider:before {
+            position: absolute;
+            content: "";
+            height: 50px;
+            width: 50px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .Slider:before {
+            -webkit-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+            transform: translateX(60px);
         }
     }
 }

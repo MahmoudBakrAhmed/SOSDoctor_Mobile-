@@ -13,10 +13,21 @@
 
 
 <ion-content>
-    <img id="HeaderImage" src="../../assets/images/footer-bar.png">
+    <img id="HeaderImage" src="assets/images/footer-bar.png">
     <label id="BaseLabel">You Don't have any <br> new requests now.</label>
-    <img id="FooterImage" src="../assets/images/footer-bar.png">
+    <img id="FooterImage" src="assets/images/footer-bar.png">
     
 </ion-content>
 
-
+<ion-footer>
+  <ion-navbar id="FooterNav">
+      <div id="ActivationDiv">
+          <label id="InActiveLabel">Inactive</label>
+          <label class="ActiveSwitch">
+              <input id="ActiveToggleSwitch" type="checkbox" checked="checked">
+              <span class="Slider Round"></span>
+          </label>
+          <label id="ActiveLabel">Active</label>
+      </div>
+  </ion-navbar>
+</ion-footer>

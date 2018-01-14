@@ -21,6 +21,9 @@ page-accepted-visit {
         margin-left: 10px;
     }
     #ImageDiv img{
+        border:1px solid rgb(0,182,185);
+        border-radius: 10px;
+        border-width: thin;
         width: 100%;
     }
     #DetailsDiv{
@@ -41,12 +44,15 @@ page-accepted-visit {
         margin-left: 10px;
     }
     #ContactDiv{
-        display: block;
+        display: inline-block;
         position: fixed;
         right: 0;
         margin-right: 10px;
+        margin-top: 10px;
+        
     }
-    #ContactDiv button{
+    #ContactDiv a{
+        margin-left: 10px;
         background-color: transparent;
     }
     #ButtonsDiv{
@@ -82,9 +88,9 @@ page-accepted-visit {
     }
     @media only screen and (max-width: 369px) and ( min-width: 350px) {
     }
-    @media only screen and (max-width: 414px) and ( min-width: 370px) {
+    @media only screen and (max-width: 414px) and ( min-width: 400px) {
         #PatiantDiv{
-            height: 25%;
+            height: 20%;
         }
         #ProblemLabel{
             font-size: 25px;
@@ -108,22 +114,26 @@ page-accepted-visit {
             height: 49px;
         }
         #ContactDiv img{
+            margin-top: 50px;
             width: 100%;
             height: 100%;
         }
         #BaseLabel{
-            font-size: 60px;
+            font-size: 50px;
         }
         #ButtonsDiv{
             margin-bottom: 220px;
         }
         #ButtonsDiv button{
-            width: 96%;
+            width: 96.8%;
             height: 70px;
             font-size: 50px;
         }
     }
-    @media only screen and (max-width: 768px) and ( min-width: 700px) {
+    @media only screen and ( min-width: 700px) {
+        #PatiantDiv{
+            height: 22%;
+        }
         #DetailsDiv{
             margin-bottom: 200px;
         }
@@ -154,4 +164,42 @@ page-accepted-visit {
             font-size: 50px;
         }
     }
+    // @media only screen and ( min-width: 800px) {
+    //     #PatiantDiv{
+    //         height: 22%;
+    //     }
+    //     #DetailsDiv{
+    //         margin-bottom: 200px;
+    //     }
+    //     #DetailsDiv label{
+    //         font-size: 43px;
+    //     }
+    //     #ProblemLabel{
+    //         margin-top: 25px;
+    //         font-size: 40px;
+    //     }
+    //     #ContactDiv{
+    //         flex: row;
+    //         margin-right: 0px;
+    //     }
+    //     #ContactDiv button{
+    //         width: 60px;
+    //         height: 59px;
+    //     }
+    //     #ContactDiv img{           
+    //         width: 100%;
+    //         height: 100%;
+    //     }
+    //     #BaseLabel{
+    //         font-size: 80px;
+    //     }
+    //     #ButtonsDiv{
+    //         margin-bottom: 220px;
+    //     }
+    //     #ButtonsDiv button{
+    //         width: 97%;
+    //         height: 70px;
+    //         font-size: 50px;
+    //     }
+    // }
 }

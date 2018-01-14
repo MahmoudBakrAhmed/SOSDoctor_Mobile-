@@ -1,24 +1,47 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { Events } from 'ionic-angular';
-import { NoRequestsPage } from '../no-requests/no-requests';
+import { RateLastVisitPage } from '../rate-last-visit/rate-last-visit';
+import { Storage } from '@ionic/storage';
 
 @Component({
   selector: 'page-finished-visit',
   templateUrl: 'finished-visit.html',
 })
 export class FinishedVisitPage {
-
-    constructor(public navCtrl: NavController, public navParams: NavParams, private events: Events) {
+    EndTime: String;
+    StartTime: String;
+    constructor(public navCtrl: NavController, private storage: Storage, public navParams: NavParams, private events: Events) {
+        this.events.publish('hideHeader', { isHidden: false});        
     }
 
     ionViewDidEnter() {
-        let checked = <HTMLInputElement>document.getElementsByTagName("input")[1];
-        if(checked){
-            checked.addEventListener("click", () => {
-                this.Navigation();
-            }, false);
+        this.storage.get('StartTime').then((val) => {
+            this.StartTime = val;
+        });
+        var Time = new Date();
+        var smallHour = "";
+        var zeroMenite = "";
+        smallHour = Time.getHours() + "";
+        if(Time.getHours() > 12){
+            smallHour = "0" + (Time.getHours() - 12);
         }
+        else if(Time.getHours() < 10){
+            smallHour = "0" + Time.getHours();
+        }
+        if(Time.getMinutes() < 10){
+            zeroMenite = "0" + Time.getMinutes();
+        }
+        else{
+            zeroMenite = Time.getMinutes() + "";
+        }
+        if(Time.getHours() >= 12){
+            zeroMenite += " PM"
+        }
+        else{
+            zeroMenite += " AM"
+        }
+        this.EndTime = smallHour + ":" + zeroMenite + "";
     }
     Navigation(){
         if(!this.navCtrl.isTransitioning()){
@@ -27,7 +50,7 @@ export class FinishedVisitPage {
         this.navCtrl.popToRoot();
     }
     SubmitButton(){
-        this.navCtrl.push(NoRequestsPage);
+        this.navCtrl.push(RateLastVisitPage);
     }
 
 }

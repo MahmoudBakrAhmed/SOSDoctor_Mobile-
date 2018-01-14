@@ -13,14 +13,14 @@
 
 
 <ion-content>
-    <img id="HeaderImage" src="../../assets/images/footer-bar.png">
+    <img id="HeaderImage" src="assets/images/footer-bar.png">
     <label id="BaseLabel">You have ended the visit</label>
-    <label id="StartTimingLabel">Time of start <br> <b id="ValueLabel">10:00 PM</b></label>
-    <label id="StartTimingLabel">Time of end <br> <b id="ValueLabel">10:30 PM</b></label>
+    <label id="StartTimingLabel">Time of start <br> <b id="ValueLabel">{{StartTime}}</b></label>
+    <label id="StartTimingLabel">Time of end <br> <b id="ValueLabel">{{EndTime}}</b></label>
     <label id="StartTimingLabel">Fees to be collected <br> <b id="ValueLabel">70 LE</b></label>
     <label id="StartTimingLabel">Payment Method <br> <b id="ValueLabel">Cash</b></label>
     <div id="ButtonsDiv">
         <button id="DoneButton" (click)="SubmitButton()">Done</button>
     </div>
-    <img id="FooterImage" src="../../assets/images/footer-bar.png">
+    <img id="FooterImage" src="assets/images/footer-bar.png">
 </ion-content>

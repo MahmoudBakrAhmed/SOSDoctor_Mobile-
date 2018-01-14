@@ -72,10 +72,12 @@ page-finished-visit {
     }
     @media only screen and (max-width: 650px) and ( min-width: 550px) {
         #BaseLabel{
-            font-size: 50px;
+            margin-left: -50px;
+            font-size: 40px;
         }
         #StartTimingLabel{
-            font-size: 50px;
+            margin-left: -50px;
+            font-size: 40px;
         }
         #ButtonsDiv button{
             height: 100px;
@@ -85,7 +87,7 @@ page-finished-visit {
     }
     @media only screen and (max-width: 768px) and ( min-width: 700px) {
         #BaseLabel{
-            margin-left: -80px;
+            margin-left: 0px;
             font-size: 60px;
         }
         #StartTimingLabel{

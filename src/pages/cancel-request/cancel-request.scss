@@ -1,12 +1,4 @@
 page-cancel-request {
-    #HeaderImage{
-        display: block;
-        width: 100%;
-        margin-top: 57px;
-        //height: 25px;
-        position: fixed;
-        top: 0;
-    }
     #BaseLabel{
         display: block;
         font-size: 30px;
@@ -47,29 +39,7 @@ page-cancel-request {
         font-size: 34px;
         font-weight: 100;
     }
-    #FooterImage{
-        display: block;
-        width: 100%;
-        margin-bottom: 55px;
-        //height: 23px;
-        position: fixed;
-        bottom: 0;
-    }
     @media only screen and (max-width: 330px) and ( min-width: 310px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
         #ButtonsDiv button{
             width: 120px;
             height: 70px;
@@ -77,40 +47,12 @@ page-cancel-request {
         
     }
     @media only screen and (max-width: 369px) and ( min-width: 350px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
     }
     @media only screen and (max-width: 414px) and ( min-width: 370px) {
 
         #BaseLabel {
             font-size: 35px;
             margin-top: 30px;
-        }
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
         }
         #ButtonsDiv{
             
@@ -127,43 +69,15 @@ page-cancel-request {
             font-size: 35px;
             margin-top: 30px;
         }
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 57px;
-            position: fixed;
-            top: 0;
-        }
         #ButtonsDiv{
             margin-left: 35px;
         }
         #ButtonsDiv button{
             margin-top: 7px;
         }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
     }
     
     @media only screen and (max-width: 650px) and ( min-width: 550px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 55px;
-            position: fixed;
-            bottom: 0;
-        }
         #BaseLabel { 
             font-size: 60px;
             margin-top: 60px;
@@ -182,20 +96,6 @@ page-cancel-request {
         
     }
     @media only screen and (max-width: 768px) and ( min-width: 700px) {
-        #HeaderImage{
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            position: fixed;
-            top: 0;
-        }
-        #FooterImage{
-            display: block;
-            width: 100%;
-            margin-bottom: 65px;
-            position: fixed;
-            bottom: 0;
-        }
         #WarningLabel{
             font-size: 60px;
             margin-bottom: 215px;

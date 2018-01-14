@@ -1,23 +1,90 @@
 <ion-menu [content]="SOSMenu">
     <ion-content class="MenuContent" title="Menu">
-        
+          
+        <div id="MenuHeaderDataDiv">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <img src="assets/images/SOSavater.png">
+                    </ion-col>
+                    <ion-col col-auto>
+                        <label id="UsernameMenuLabel"></label>
+                    </ion-col>
+                    <ion-col col-auto push-1>
+                        <button menuClose id="MenuCloseButton" >
+                            <img src="assets/images/MenuClose.png">
+                        </button>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-auto>
+                    </ion-col>
+                    <ion-col col-auto push-1>
+                        <button id="ProfileMenuLabel">View Profile</button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div id="MenuTitleSplitDiv"></div>
+        <ion-list id="MenuList" title="Menu">
+            <button menuClose >
+                Home
+            </button>
+            <br>
+            <button>
+                About Us
+            </button>
+            <br>
+            <button >
+                Contact Us
+            </button>
+            <br>
+            <button >
+                My Dashboard
+            </button>
+            <br>
+            <button menuClose (click)="Logout()">
+                Logout
+            </button>
+        </ion-list>
+        <div id="SocialMediaDiv">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-auto>
+                        <button menuClose>
+                            <img src="assets/images/facebook-icon.png">
+                        </button>
+                    </ion-col>
+                    <ion-col col-auto>
+                        <button menuClose >
+                            <img src="assets/images/linkedin-icon.png">
+                        </button>
+                    </ion-col>
+                    <ion-col col-auto>
+                        <button menuClose >
+                            <img src="assets/images/instagram-icon.png">
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
     </ion-content>
 </ion-menu>
 <ion-nav #SOSMenu [root]="rootPage">
     
 </ion-nav>
-<ion-navbar>
+<ion-navbar  *ngIf="!MenuIsHidden">
     <ion-title>
-        <img src="../assets/images/logo.png">
+        <img src="assets/images/logo.png">
     </ion-title>
-    <button ion-button menuToggle><img id="MenuImage" src="../assets/images/burger-buttons.png"></button>
+    <button id="MenuButton" ion-button menuToggle><img id="MenuImage" src="assets/images/burger-buttons.png"></button>
 </ion-navbar>
 
 <ion-footer *ngIf="!footerIsHidden">
     <ion-navbar id="FooterNav">
         <div id="ActivationDiv">
             <label id="InActiveLabel">Inactive</label>
-            <label class="switch" >
+            <label class="switch">
                 <input id="ActiveToggle" type="checkbox" checked="checked">
                 <span class="slider round"></span>
             </label>

@@ -1,6 +1,6 @@
 page-home {
     ion-content{
-        background-image: url("../../assets/images/background.png");
+        background-image: url("../assets/images/background.png");
         height: 100%;
         background-position:center;
         background-repeat: no-repeat;
@@ -16,10 +16,11 @@ page-home {
         font-kerning: normal;
     }
     #ActivationDiv{
-        width: 100%;
+        text-align: center;
+        width: 90%;
         margin-top: 20px;
     }
-    #InActiveLabel{
+    #HomeInActiveLabel{
         display: block;
         text-align: center;
         font-size: 30px;
@@ -29,28 +30,28 @@ page-home {
         margin-left: 10px;
         margin-top: -4px;
     }
-    #ActiveLabel{
+    #HomeActiveLabel{
         display: block;
         text-align: center;
         font-size: 30px;
         margin-top: 60px;
         color: white;
         float: right;
-        margin-right: 50px;
+        margin-right: 5px;
         margin-top: -4px;
     }
-    .switch {
-        position: absolute;
+    .Switch {
+        position: relative;
         display: inline-block;
         width: 60px;
         height: 34px;
-        margin-left: 20px;
         //margin-top: 50px;
     }
-    .switch input {
+    .Switch input {
         display: none;
+        border: 15px solid black;
     }
-    .slider {
+    .Slider {
         position: absolute;
         cursor: pointer;
         top: 0;
@@ -62,7 +63,7 @@ page-home {
         transition: .4s;
     }
 
-    .slider:before {
+    .Slider:before {
         position: absolute;
         content: "";
         height: 26px;
@@ -73,174 +74,46 @@ page-home {
         -webkit-transition: .4s;
         transition: .4s;
     }
-    input:checked + .slider {
+    input:checked + .Slider {
         background-color: rgb(0,182,185);
     }
 
-    input:focus + .slider {
+    input:focus + .Slider {
         box-shadow: 0 0 1px rgb(0,182,185);
     }
 
-    input:checked + .slider:before {
+    input:checked + .Slider:before {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
     }
-    .slider.round {
+    .Slider.Round {
         border-radius: 34px;
     }
 
-    .slider.round:before {
+    .Slider.Round:before {
         border-radius: 50%;
     }
-    @media only screen and (max-width: 414px) and ( min-width: 400px) {
-
-        #BaseLabel {
-            font-size: 60px;
-            margin-top: 60px;
-        }
-        #InActiveLabel{
-            font-size: 40px;
-            margin-left: 20px;
-        }
-        #ActiveLabel{
-            font-size: 40px;
-            margin-right: 50px;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-left: 30px;
-        }
-    }
-    @media only screen and (max-width: 390px) and ( min-width: 370px) {
-        #InActiveLabel{
-            font-size: 35px;
-            margin-left: 20px;
-        }
-        #ActiveLabel{
-            font-size: 35px;
-            margin-right: 50px;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-left: 30px;
-        }
-    }
-    @media only screen and (max-width: 369px) and ( min-width: 350px) {
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 60px;
-            height: 34px;
-            margin-left: 40px;
-        }
-    }
-    @media only screen and (max-width: 650px) and ( min-width: 550px) {
+    @media only screen and ( min-width: 800px) {
         #BaseLabel { 
             font-size: 80px;
         }
-        #InActiveLabel{
-            font-size: 50px;
-            margin-left: 50px;
-            margin-top: -6px;
-        }
-        #ActiveLabel{
-            font-size: 50px;
-            margin-right: 110px;
-            margin-top: -6px;
-        }
-        .switch {
-            position: absolute;
-            display: inline-block;
-            width: 100px;
-            height: 50px;
-            margin-left: 45px;
-            //margin-top: 50px;
-        }
-        .switch input {
-            display: none;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-        .slider:before {
-            position: absolute;
-            content: "";
-            height: 40px;
-            width: 40px;
-            left: 4px;
-            bottom: 4px;
-            background-color: white;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-        input:checked + .slider:before {
-            -webkit-transform: translateX(50px);
-            -ms-transform: translateX(50px);
-            transform: translateX(50px);
-        }
-        .slider.round {
-            border-radius: 34px;
-        }
-
-        .slider.round:before {
-            border-radius: 50%;
-        }
-    }
-    @media only screen and (max-width: 768px) and ( min-width: 668px) {
-
-        #BaseLabel { 
-            font-size: 80px;
-        }
-        #InActiveLabel{
+        #HomeInActiveLabel{
             font-size: 60px;
             margin-left: 60px;
             margin-top: -6px;
         }
-        #ActiveLabel{
+        #HomeActiveLabel{
             font-size: 60px;
             margin-right: 130px;
             margin-top: -6px;
         }
-        .switch {
-            position: absolute;
-            display: inline-block;
+        .Switch {
             width: 120px;
             height: 60px;
-            margin-left: 75px;
             //margin-top: 50px;
         }
-        .switch input {
-            display: none;
-        }
-        .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #ccc;
-            -webkit-transition: .4s;
-            transition: .4s;
-        }
-
-        .slider:before {
+        .Slider:before {
             position: absolute;
             content: "";
             height: 50px;
@@ -251,17 +124,146 @@ page-home {
             -webkit-transition: .4s;
             transition: .4s;
         }
-        input:checked + .slider:before {
+        input:checked + .Slider:before {
             -webkit-transform: translateX(60px);
             -ms-transform: translateX(60px);
             transform: translateX(60px);
         }
-        .slider.round {
-            border-radius: 34px;
+    }
+    @media only screen and (max-width: 799px) and ( min-width: 700px) {
+        #BaseLabel { 
+            font-size: 80px;
         }
-
-        .slider.round:before {
-            border-radius: 50%;
+        #HomeInActiveLabel{
+            font-size: 60px;
+            margin-left: 8%;
+            margin-top: -6px;
+        }
+        #HomeActiveLabel{
+            font-size: 60px;
+            margin-right: 8%;
+            margin-top: -6px;
+        }
+        .Switch {
+            width: 120px;
+            height: 60px;
+            //margin-top: 50px;
+        }
+        .Slider:before {
+            position: absolute;
+            content: "";
+            height: 50px;
+            width: 50px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .Slider:before {
+            -webkit-transform: translateX(60px);
+            -ms-transform: translateX(60px);
+            transform: translateX(60px);
         }
     }
+    @media only screen and (max-width: 670px) and ( min-width: 550px) {
+        #BaseLabel { 
+            font-size: 80px;
+        }
+        #HomeInActiveLabel{
+            font-size: 50px;
+            margin-left: 8%;
+            margin-top: -6px;
+        }
+        #HomeActiveLabel{
+            display: inline-block;
+            font-size: 50px;
+            margin-right: 8%;
+            margin-top: -6px;
+        }
+        .Switch {
+            width: 100px;
+            height: 55px;
+        }
+        .Slider:before {
+            position: absolute;
+            content: "";
+            height: 45px;
+            width: 45px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .Slider:before {
+            -webkit-transform: translateX(48px);
+            -ms-transform: translateX(48px);
+            transform: translateX(48px);
+        }
+    }
+    @media only screen and (max-width: 414px) and ( min-width: 400px) {
+
+        #BaseLabel {
+            font-size: 60px;
+            margin-top: 60px;
+        }
+        #HomeInActiveLabel{
+            font-size: 40px;
+        }
+        #HomeActiveLabel{
+            font-size: 40px;
+        }
+        .Switch {
+            width: 70px;
+            height: 40px;
+            margin-top: 5px;
+        }
+        .Slider:before {
+            position: absolute;
+            content: "";
+            height: 32px;
+            width: 32px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+        input:checked + .Slider:before {
+            -webkit-transform: translateX(30px);
+            -ms-transform: translateX(30px);
+            transform: translateX(30px);
+        }
+    }
+    @media only screen and (max-width: 395px) and ( min-width: 370px) {
+        #HomeInActiveLabel{
+            font-size: 35px;
+            //margin-left: 20px;
+        }
+        #HomeActiveLabel{
+            font-size: 35px;
+            //margin-right: 10px;
+        }
+        .Switch {
+            width: 60px;
+            height: 34px;
+        }
+    }
+    @media only screen and (max-width: 369px) and ( min-width: 350px) {
+        .Switch {
+            width: 60px;
+            height: 34px;
+        }
+    }
+    @media only screen and (max-width: 320px){
+        #HomeActiveLabel{
+            margin-right: 10px;
+        }
+        .Switch {
+            width: 60px;
+            height: 34px;
+        }
+    }
+    
 }
